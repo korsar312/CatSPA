@@ -1,11 +1,11 @@
-import {route} from "./RoutesInterfaces";
+import {route} from "./Route.interfaces";
 import {lazy} from "react";
 
-const MainPage = lazy(() => import("../../Pages/MainPage"));
-const AboutPage = lazy(() => import("../../Pages/AboutPage"));
-const ErrorPage = lazy(() => import("../../Pages/ErrorPage"));
+const MainPage = lazy(() => import("../../../Pages/MainPage"));
+const AboutPage = lazy(() => import("../../../Pages/AboutPage"));
+const ErrorPage = lazy(() => import("../../../Pages/ErrorPage"));
 
-export const routesPath: route.IRoute[] = [
+export const routePath: route.IRoute[] = [
     {
         path: "/",
         name: route.Name.MAIN,
@@ -26,4 +26,4 @@ export const routesPath: route.IRoute[] = [
     },
 ];
 
-export const getRoutes = () => routesPath;
+export const getRoutes = () => routePath;

@@ -1,17 +1,16 @@
 import React, {Suspense} from 'react';
 import {HashRouter, Route, Routes} from "react-router-dom";
-import {routesPath} from "./Services/Routes/RoutesPath";
-import {RouterActivator} from "./Services/Routes/routerActivator";
-
+import {routePath} from "./Services/Stores/Routes/Route.path";
+import {RouteActivator} from "./Services/Stores/Routes/RouteActivator";
 
 const App = () => {
     return (
         <div id="App">
             <HashRouter>
-                <RouterActivator/>
+                <RouteActivator/>
                 <Suspense fallback={<></>}>
                 <Routes>
-                    {routesPath.map(({ name, element: Element, path: path, ...rest }) => (
+                    {routePath.map(({ name, element: Element, path: path, ...rest }) => (
                         <Route
                             path={path}
                             key={name}

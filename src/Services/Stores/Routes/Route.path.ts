@@ -1,9 +1,9 @@
 import {route} from "./Route.interfaces";
 import {lazy} from "react";
 
-const MainPage = lazy(() => import("../../../Pages/MainPage"));
-const AboutPage = lazy(() => import("../../../Pages/AboutPage"));
-const ErrorPage = lazy(() => import("../../../Pages/ErrorPage"));
+const MainPage = lazy(() => import("../../../Pages/MainPage/MainPage"));
+const AboutPage = lazy(() => import("../../../Pages/AboutPage/AboutPage"));
+const ErrorPage = lazy(() => import("../../../Pages/ErrorPage/ErrorPage"));
 
 export const routePath: route.IRoute[] = [
     {

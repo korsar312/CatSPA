@@ -2,7 +2,7 @@ import {route} from "./Route.interfaces";
 import {getRoutes} from "./Route.path";
 import {generatePath, Params} from "react-router-dom";
 import rootStore from "../Store";
-import RestApi from "../../RestApi";
+import RestApi from "../../RestApi/RestApi";
 
 class RouteGoService {
 
